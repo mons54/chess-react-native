@@ -5,19 +5,19 @@ import {
   Button
 } from 'react-native';
 
-export default class HomeScreen extends React.Component {
+export default class GameScreen extends React.Component {
 
   static navigationOptions = {
-    title: 'Home',
+    title: 'Game',
   }
 
   render() {
     return (
       <View>
-        <Text>Home Screen</Text>
+        <Text>Game Screen</Text>
         <Button
-          onPress={() => this.props.navigation.navigate('Game')}
-          title="Go to game"
+          onPress={() => this.props.navigation.navigate('Home')}
+          title="Go to home"
         />
       </View>
     );
